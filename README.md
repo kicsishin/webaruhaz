@@ -1,4 +1,5 @@
 # Json szerver
+órai munka
 [json server](https://github.com/typicode/json-server)
 [json konverter](https://www.convertsimple.com/convert-javascript-to-json/)
 
