@@ -5,7 +5,36 @@
 indítás: json-server --watch db.json
 
 ```json
-
+[
+    {
+        "id": "lb697mkdvhdgwxppj3",
+        "name": "Áru 1",
+        "price": 1500,
+        "quantity": 97,
+        "type": "tejtermék"
+    },
+    {
+        "id": "lb697mkd1ik1gidh4dg",
+        "name": "Áru 2",
+        "price": 2500,
+        "quantity": 15,
+        "type": "tejtermék"
+    },
+    {
+        "id": "lb697mkd09cou50yng22",
+        "name": "Áru 3",
+        "price": 3500,
+        "quantity": 25,
+        "type": "sajtok"
+    },
+    {
+        "id": "lb697mkdmfa0xrger1",
+        "name": "Áru 4",
+        "price": 4500,
+        "quantity": 10,
+        "type": "sajtok"
+    }
+]
 ```
 
 
