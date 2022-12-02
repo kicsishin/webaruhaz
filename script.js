@@ -45,7 +45,8 @@ state = {
     cart: [],
 
     event: "read", //milyen állapotban van: read, delete, update, create
-    currentId: null //Update esetén itt tároljuk a módosítandó product id-jét
+    currentId: null, //Update esetén itt tároljuk a módosítandó product id-jét
+    url: "http://localhost:3000/products"
 }
 
 //#region Segéd függvények
@@ -253,6 +254,15 @@ function cardBoxView(){
 
 //Read: product lista
 function renderProducts(){
+
+    fetch(state.url)
+  .then((response) => response.json())
+  .then((data) => {
+    console.log("data", data)
+
+});
+
+
     console.log(state.products);
     state.event = "read";
     let prodctsHtml = "";
