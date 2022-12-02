@@ -17,28 +17,28 @@ state = {
             name: "Áru 1",
             price: 1500,
             quantity: 97,
-            isInStock: true
+            type: "tejtermék"
         },
         {
             id: idGen(),
             name: "Áru 2",
             price: 2500,
             quantity: 15,
-            isInStock: true
+            type: "tejtermék"
         },
         {
             id: idGen(),
             name: "Áru 3",
             price: 3500,
             quantity: 25,
-            isInStock: false
+            type: "sajtok"
         },
         {
             id: idGen(),
             name: "Áru 4",
             price: 4500,
             quantity: 10,
-            isInStock: true
+            type: "sajtok"
         }
     ],
 
@@ -132,7 +132,7 @@ document.getElementById("save-product").onclick = function(event){
         id: id,
         name: name,
         price: price,
-        isInStock: isInStock
+        type: type
     }
 
     if (state.event == "create" ) {
@@ -264,8 +264,9 @@ function renderProducts(){
                 <div class="card-body">
                     <h5 class="card-title">${product.name}</h5>
                     <p class="card-text">Termék ár: ${product.price} Ft</p>
+                    <p class="card-text">Fajta: ${product.type}</p>
                     <p class="card-text">Raktáron: ${product.quantity} db</p>
-                </div>
+                    </div>
 
                 <div class="d-flex flex-row m-2">
 
